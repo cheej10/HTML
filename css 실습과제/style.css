@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #ff4500;
+  height: 64px;
+  display: grid;
+  grid-template-areas: 'left-space logo menu logout right-space';
+  grid-template-columns: 25px 350px 1fr 70px 25px;
+  align-items: center;
+  color: aliceblue;
+  box-shadow: 4px 3px 4px 0px rgb(194 194 194);
+}
+
+.navbar-logo {
+  grid-area: logo;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.navbar-menu {
+  grid-area: menu;
+  display: flex;
+  font-size: 20px;
+}
+
+.navbar-menu > li {
+  margin: 0 20px;
+}
+
+.navbar-menu > li:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.logout {
+  grid-area: logout;
+  font-size: 22px;
+}
