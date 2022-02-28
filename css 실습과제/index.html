@@ -9,7 +9,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="navbar">
         <h1 class="navbar-logo">FastCampus Portfolio</h1>
         <ul class="navbar-menu">
@@ -22,7 +22,130 @@
         <div class="logout">Logout</div>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <aside class="sidebar">
+        <h1 class="see-option-title">보기 옵션</h1>
+        <ul class="see-option-menu">
+          <li>최신순 보기</li>
+          <li>좋아요 순 보기</li>
+        </ul>
+        <ul class="photo-menu">
+          <li>내 사진</li>
+          <li>좋아요 한 사진</li>
+          <li>팔로우 회원 사진</li>
+        </ul>
+      </aside>
+      <div class="content">
+        <section class="content-intro">
+          <p class="content-intro-title">패스트캠퍼스 포트폴리오입니다.</p>
+          <p class="content-intro-desc">
+            수많은 이용자들이 공유하는 멋진 사진들을 구경하고<br />
+            내가 직접 찍은 작품들을 공유하세요!
+          </p>
+        </section>
+        <section class="content-gallery">
+          <div class="photo">
+            <img
+              src="./images/photo_1.jpg"
+              alt="여행중 발견한 풍경"
+              width="420"
+              height="280"
+            />
+            <p>
+              <img
+                src="./images/heart_on.png"
+                alt="좋아요 버튼"
+                class="heart-btn"
+              />
+              <span class="photo-desc">
+                <span class="username">홍길동</span>
+                <span class="text">여행 중 발견한 풍경</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="photo">
+            <img
+              src="./images/photo_2.jpg"
+              alt="누렁이랑 뒷산에 오르다"
+              width="420"
+              height="280"
+            />
+            <p>
+              <img
+                src="./images/heart_off.png"
+                alt="좋아요 버튼"
+                class="heart-btn"
+              />
+              <span class="photo-desc">
+                <span class="username">전우치</span>
+                <span class="text">누렁이랑 뒷산에 오르다</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="photo">
+            <img
+              src="./images/photo_3.jpg"
+              alt="공무원시험 합격한 여자친구"
+              width="420"
+              height="280"
+            />
+            <p>
+              <img
+                src="./images/heart_off.png"
+                alt="좋아요 버튼"
+                class="heart-btn"
+              />
+              <span class="photo-desc">
+                <span class="username">임꺽정</span>
+                <span class="text">공무원시험 합격한 여자친구</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="photo">
+            <img
+              src="./images/photo_4.jpg"
+              alt="두시간 반만에 성공했어요!"
+              width="420"
+              height="280"
+            />
+            <p>
+              <img
+                src="./images/heart_off.png"
+                alt="좋아요 버튼"
+                class="heart-btn"
+              />
+              <span class="photo-desc">
+                <span class="username">성춘향</span>
+                <span class="text">두시간 반만에 성공했어요!</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="photo">
+            <img
+              src="./images/photo_5.jpg"
+              alt="나를 집사로 간택한 길냥이"
+              width="420"
+              height="280"
+            />
+            <p>
+              <img
+                src="./images/heart_off.png"
+                alt="좋아요 버튼"
+                class="heart-btn"
+              />
+              <span class="photo-desc">
+                <span class="username">연흥부</span>
+                <span class="text">나를 집사로 간택한 길냥이</span>
+              </span>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

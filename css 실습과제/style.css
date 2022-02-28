@@ -1,22 +1,26 @@
-.navbar {
+.header {
   background-color: #ff4500;
   height: 64px;
-  display: grid;
-  grid-template-areas: 'left-space logo menu logout right-space';
-  grid-template-columns: 25px 350px 1fr 70px 25px;
-  align-items: center;
-  color: aliceblue;
+  width: 100%;
   box-shadow: 4px 3px 4px 0px rgb(194 194 194);
+  position: fixed;
+  z-index: 999;
+}
+
+.navbar {
+  line-height: 64px;
+  margin: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
 }
 
 .navbar-logo {
-  grid-area: logo;
   font-weight: bold;
   font-size: 28px;
 }
 
 .navbar-menu {
-  grid-area: menu;
   display: flex;
   font-size: 20px;
 }
@@ -31,6 +35,125 @@
 }
 
 .logout {
-  grid-area: logout;
   font-size: 22px;
+}
+
+.main {
+  padding: 64px 0 0 240px;
+}
+
+.sidebar {
+  background-color: #eee;
+  width: 240px;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+}
+
+.see-option-title {
+  font-weight: bold;
+  font-size: 22px;
+  color: gray;
+  padding: 30px 40px;
+}
+
+.see-option-title:hover {
+  cursor: pointer;
+}
+
+.see-option-menu {
+  margin-bottom: 30px;
+}
+
+.see-option-menu > li,
+.photo-menu > li {
+  font-size: 20px;
+  padding: 15px 40px;
+}
+
+.see-option-menu > li:hover,
+.photo-menu > li:hover {
+  cursor: pointer;
+  background-color: #444;
+  color: aliceblue;
+}
+
+.content {
+  height: 100vh;
+}
+
+.content-intro {
+  background-color: white;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+}
+
+.content-intro-title {
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.content-intro-desc {
+  font-size: 24px;
+}
+
+.content-gallery {
+  background-color: rgb(248, 248, 248);
+  padding: 20px;
+}
+
+.photo {
+  background-color: white;
+  box-shadow: 1px 1px 5px 0px #cecece;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.photo:hover {
+  box-shadow: 1px 1px 8px 0px #a7a7a7;
+}
+
+.photo > img {
+  border-radius: 5px;
+}
+
+.photo > p {
+  width: 500px;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.heart-btn {
+  margin: 20px;
+}
+
+.heart-btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.photo-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-desc > .username {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.photo-desc > .text {
+  font-size: 20px;
+  color: rgb(128, 128, 128);
 }
